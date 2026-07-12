@@ -43,7 +43,7 @@ function ChatBox() {
       try{
 
 
-        const res = await API.get("/messages");
+        const res = await API.get("/api/messages");
 
 
         setMessages(res.data);
@@ -169,7 +169,7 @@ function ChatBox() {
     try{
 
 
-      await API.post("/messages",{
+      await API.post("/api/messages",{
 
 
         username:username,
